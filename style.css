@@ -1,0 +1,324 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Work Sans', sans-serif;
+}
+/* default css  */
+.container{
+    max-width: 1350px;
+    margin: auto;
+}
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.header{
+    background: white;
+    padding: 9px;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    top:0%;
+    left:0%;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header .left-menu{
+    width: 30%;
+    float: left;
+    margin-top: 0px;
+}
+.header .left-menu img{
+    width: 47px;
+    vertical-align: top;
+}
+.header .left-menu h1{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    /* margin-bottom: 20px; */
+    padding-top: 11px;
+    padding-left: 7px;
+    transition: .4s;
+    cursor: pointer;
+}
+.header .left-menu h1:hover{
+    color: rgba(128, 128, 128, 0.781);
+}
+.header .center-menu{
+    width: 50%;
+    float: left;
+}
+.header .center-menu ul{
+    margin-top: 14px;
+}
+.header .center-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.header .center-menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    padding: 13px;
+    font-weight: 400;
+    transition: .5s;
+}
+.header .center-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    width: 180px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .5s;
+   
+}
+.header .center-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+
+}
+.header .center-menu ul li ul li{
+    display: block;
+    
+}
+.header .center-menu ul li ul li a{
+    background: white;
+    display: block;
+    border-bottom: 1px solid gray;
+}
+
+
+
+
+.header .center-menu ul li a:hover{
+    color: rgb(98,120,223);
+   
+}
+
+.header .right-menu{
+    width: 20%;
+    float: left;
+
+}
+.header .right-menu button {
+    margin-top: 2px;
+    
+    background: transparent;
+    font-size: 14px;
+    color: rgb(98,120,223);
+    border: 2px solid rgb(98,120,223);
+    padding: 10px 26px;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: .4s;
+    
+}
+.header .right-menu button:hover{
+    background: rgb(98,120,223);
+    color: white;
+    box-shadow: 2px 2px 15px 1px rgb(98 120 223);
+}
+
+/* banner  */
+.banner{
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/11/20131122_094444.jpg);
+    padding: 110px;
+    margin-top: 65px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+   position: relative;
+   z-index: 1;
+   
+}
+
+.banner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.459);
+    z-index: -1;
+   
+  
+}
+
+.banner .title h3{
+    font-size: 26px;
+    font-weight: 400;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+
+.banner .btn h5 {
+    background: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 16px 20px;
+    display: inline-block;
+    background: white;
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 21px;
+    transition: .5s;
+    cursor: pointer;
+}
+.banner .btn h5:hover{
+    background: rgb(98,120,223);
+    color: white;
+}
+ .banner .title h1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin: 10px;
+  
+    margin: 30px 0;
+}
+
+/* .content  */
+
+.content-section{
+
+  padding: 70px;
+  background-color: rgb(247,249,255);
+  
+   
+   
+}
+
+.content-section .video{
+    width: 42%;
+    float: left;
+    margin-left: 80px;
+}
+
+.content-section .content2{
+    width: 41%;
+    float: right;
+    margin-right: 80px;
+   
+}
+.content-section .content2 h2{
+
+font-size: 50px;
+
+font-weight: 400;
+}
+
+.content-section .content2 p{
+
+font-size: 18px;
+
+line-height: 27px;
+
+font-weight: 300;
+
+margin-top: 15px;
+}
+
+
+
+/* service section */
+
+.service{
+    text-align: center;
+    padding: 70px 0;
+}
+
+
+.service .title h1 {
+    
+    font-size: 60px;
+}
+
+.service .title p {
+    font-size: 26px;
+    margin: 30px 0;
+    font-weight: 300;
+    margin-bottom: 80px;
+}
+
+.service .all-box .co-box{
+    width: 30%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    padding: 45px;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    
+    position: relative;
+}
+
+.service .all-box .co-box::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    box-shadow: 3.5px 5.33px 30px 0px rgba(0, 0, 0, 0.246);
+    opacity: 0;
+    transition: .4s;
+
+}
+.service .all-box .co-box:hover::after{
+    display: block;
+    opacity: .3;
+}
+
+
+.service .all-box .icon{
+
+color: rgb(98,120,223);
+font-size: 40px;
+float: left;
+width: 20%;
+text-align: center;
+
+}
+
+ .service .all-box .content{
+
+float: right;
+width: 75%;
+text-align: left;
+
+}
+ .service .all-box .content h1{
+ 
+font-size: 25px;
+ 
+font-weight: 500;
+ 
+text-transform: capitalize;
+ 
+}
+.service .all-box .content p {
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align-last: left;
+    margin-top: 20px;
+}
+  
+ 
